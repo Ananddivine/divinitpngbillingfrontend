@@ -29,7 +29,7 @@ import ManagePos from '../../Components/DivineitpngPo/ManagePos';
 import DivineitpngPoTrash from '../../Components/DivineitpngPo/DivineitpngPoTrash';
 import DivineitpngPoEdit from '../../Components/DivineitpngPo/DivineitpngPoEdit';
 import DivineitpngReceipt from '../../Components/Divineitpng/DivineitpngReceipt';
-import DivineitpngReceiptPrint from '../../Components/Divineitpng/Divineitpngreceiptprint';
+import DivineitpngReceiptPrint from '../../Components/Divineitpng/DivineitpngReceiptPrint';
 import DivineitpngReceiptList from '../../Components/Divineitpng/DivineitpngReceiptList';
 import DivineitpngReceiptTrash from '../../Components/Divineitpng/DivineitpngReceiptTrash';
 
