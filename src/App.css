@@ -1,0 +1,19 @@
+@media print {
+    /* Hide navbar, footer, and any unwanted UI components */
+    .navbar, .footer {
+      display: none !important;
+    }
+  
+    /* Optionally hide body margins for better PDF layout */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Ensure the invoice takes full width */
+    .invoice-container {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  

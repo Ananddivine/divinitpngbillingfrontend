@@ -1,0 +1,64 @@
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .print-container {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-20px); /* Shift more to the left */
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Prevent scrolling inside number inputs */
+input[type="number"]:focus {
+  outline: none;
+}
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .print-container {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-20px); /* Shift more to the left */
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Prevent scrolling inside number inputs */
+input[type="number"]:focus {
+  outline: none;
+}
