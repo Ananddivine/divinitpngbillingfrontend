@@ -2,14 +2,14 @@ import React, { useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import './DivineitpnginvoiceDownload.css';
+import './SkylapitinvoiceDownload.css';
 import logo from '../../assets/logo.png'
 import { FaMailBulk } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import axiosInstance from '../axiosInstance/axiosInstance';
 
-const DivineitpngSendEmailInvoicesCustom = () => {
+const SkylapitSendEmailInvoicesCustom = () => {
   const location = useLocation();
   const { customerName, customerNumber, customerEmail, gstNumber, invoiceNumber, invoiceDate, products, subtotal, tax, total } = location.state || {};
   const invoiceRef = useRef();
@@ -196,5 +196,5 @@ const handleSendEmail = async () => {
            );
          };       
 
-export default DivineitpngSendEmailInvoicesCustom;
+export default SkylapitSendEmailInvoicesCustom;
   

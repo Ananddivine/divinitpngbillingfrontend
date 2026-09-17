@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axiosInstance from '../axiosInstance/axiosInstance';
 import { FaSave } from "react-icons/fa";
 
-const Divineitpngbillingediting = () => {
+const Skylapitbillingediting = () => {
     const location = useLocation();
     const navigate = useNavigate();
             const [loadingSave, setLoadingSave] = useState(false);
@@ -89,7 +89,7 @@ const Divineitpngbillingediting = () => {
                 originalInvoiceNumber,
             });
             toast.success('Invoice updated successfully!');
-            navigate('/DivineitpngInvoice'); // Navigate back after update
+            navigate('/SkylapitInvoice'); // Navigate back after update
             setLoadingSave(false);
         } catch (error) {
             toast.error('Failed to update invoice. Please try again.');
@@ -252,4 +252,4 @@ const Divineitpngbillingediting = () => {
     );
 };
 
-export default Divineitpngbillingediting;
+export default Skylapitbillingediting;

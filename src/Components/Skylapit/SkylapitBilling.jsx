@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import styles for toast
 import axiosInstance from '../axiosInstance/axiosInstance'
-import './DivineitpnginvoicePrint.css'
+import './SkylapitinvoicePrint.css'
 import { FaDownload, FaMailBulk, FaPrint, FaSave, FaWhatsapp } from "react-icons/fa";
 
 
-const DivineitpngBilling = () => {
+const SkylapitBilling = () => {
   const [products, setProducts] = useState([{ name: "", price: "", quantity: "" }]);
   const [invoiceDate, setInvoiceDate] = useState(new Date().toISOString().split("T")[0]);
   const [invoiceNumber, setInvoiceNumber] = useState("");
@@ -99,11 +99,11 @@ useEffect(() => {
         const data = response.data;
         console.log("Fetched last job number:", data);
 
-        const lastJob = data.lastJobNumber || "DIP0000"; // Ensure default
+        const lastJob = data.lastJobNumber || "SKY0000"; // Ensure default
 
         // Extract numeric part and increment
-        const numericPart = parseInt(lastJob.replace("DIP", ""), 10) || 0;
-        const nextJobNumber = `DIP${(numericPart + 1).toString().padStart(4, "0")}`;
+        const numericPart = parseInt(lastJob.replace("SKY", ""), 10) || 0;
+        const nextJobNumber = `SKY${(numericPart + 1).toString().padStart(4, "0")}`;
 
         setLastJobNumber(lastJob);
         setJobNumber(nextJobNumber);
@@ -218,7 +218,7 @@ const handlePrint = async () => {
   if (!validateInputs()) return; 
   await submitInvoice();
   sessionStorage.setItem("hasRefreshed", "false");
-  navigate('/Divineitpngprint', { state: { 
+  navigate('/Skylapitprint', { state: { 
     customerName, 
     customerNumber, 
     gstNumber,
@@ -237,7 +237,7 @@ const handlePrint = async () => {
 const handleDownloadPDF = async () => {
   setLoadingDownload(true);
   await submitInvoice();
-  navigate("/Divineitpngdownload-invoice", { state: {
+  navigate("/Skylapitdownload-invoice", { state: {
     customerName, 
     customerNumber, 
     invoiceNumber, 
@@ -255,7 +255,7 @@ const handleDownloadPDF = async () => {
 const handleWhatsapp = async () => {
   setloadingWhatsapp(true);
   await submitInvoice();
-  navigate("/DivineitpngWhatsappInvoice", { state: {
+  navigate("/SkylapitWhatsappInvoice", { state: {
     customerName, 
     customerNumber, 
     invoiceNumber, 
@@ -275,7 +275,7 @@ const handleSendEmail = async () => {
   setLoadingEmail(true);
   if (!validateInputs()) return; 
   await submitInvoice();
-  navigate("/DivineitpngSendEmailInvoicesCustom", { state: {
+  navigate("/SkylapitSendEmailInvoicesCustom", { state: {
     customerName, 
     customerNumber,
     customerEmail, 
@@ -345,7 +345,7 @@ const selectWarranty = (index, warranty) => {
         <div>
           <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">Billing Studio</span>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-gray-50 font-poppins">
-            Divineitpng Laptop Services Billing
+            Skylapit Laptop Services Billing
           </h2>
           <p className="mt-2 text-sm text-gray-200">Create invoices in a calmer workspace with better grouping, stronger totals, and clearer customer details.</p>
         </div>
@@ -652,4 +652,4 @@ const selectWarranty = (index, warranty) => {
   );  
 };
 
-export default DivineitpngBilling;
+export default SkylapitBilling;

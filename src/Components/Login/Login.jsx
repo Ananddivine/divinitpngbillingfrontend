@@ -57,7 +57,7 @@ const Login = ({ setToken }) => {
     <div className="min-h-screen w-full bg-[radial-gradient(circle_at_top_left,_rgba(15,118,110,0.18),_transparent_28%),linear-gradient(135deg,#f7efe3_0%,#f3eadc_35%,#e5efe9_100%)] px-6 py-10 font-poppins">
       <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-6xl items-center gap-8 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="rounded-[32px] border border-[#dfd3c3] bg-[linear-gradient(180deg,rgba(255,253,250,0.98),rgba(255,248,239,0.96))] p-8 shadow-[0_18px_45px_rgba(73,47,24,0.08)] md:p-10">
-          <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">DIVINE IT PNG</span>
+          <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">SKYLAP IT SOLUTIONS</span>
           <h2 className="mt-6 max-w-xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">
             A calmer workspace for billing, stock, and daily admin tasks.
           </h2>

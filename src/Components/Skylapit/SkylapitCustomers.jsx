@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import styles for toast
 import {exportCustomersExcel} from '../utils/ExportExcell'
 
-const DivineitpngCustomers = () => {
+const SkylapitCustomers = () => {
   const [customers, setCustomers] = useState([]);
   const [searchInput, setSearchInput] = useState('');
   const [showSearch, setShowSearch] = useState(false);
@@ -228,4 +228,4 @@ const DivineitpngCustomers = () => {
     );
   }
 
-export default DivineitpngCustomers;
+export default SkylapitCustomers;

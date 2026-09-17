@@ -9,36 +9,36 @@ import ManageFiles from '../../Components/ManageFiles/ManageFiles';
 import Products from '../../Components/Products/Products';
 
 
-// DivineitpngBILLING
-import DivineitpngInvoice from '../../Components/Divineitpng/DivineitpngInvoice';
-import DivineitpngBilling from '../../Components/Divineitpng/DivineitpngBilling';
-import DivineitpngCustomers from '../../Components/Divineitpng/DivineitpngCustomers';
-import DivineitpngPrint from '../../Components/Divineitpng/DivineitpngPrint'
-import DivineitpngDownloadInvoice from '../../Components/Divineitpng/DivineitpngDownloadInvoice';
-import DivineitpngDashboard from '../../Components/Dashboard/Divineitpngdashboard';
-import DivineitpngStockManagement from '../../Components/Divineitpng/DivineitpngStockManagement';
-import DivineitpngTrash from '../../Components/Trash/DivineitpngTrash';
-import DivineitpngSendEmailInvoicesCustom from '../../Components/Divineitpng/DivineitpngSendEmailInvoicesCustom';
-import DivineitpngTask from '../../Components/Tasks/DivineitpngTask';
+// SkylapitBILLING
+import SkylapitInvoice from '../../Components/Skylapit/SkylapitInvoice';
+import SkylapitBilling from '../../Components/Skylapit/SkylapitBilling';
+import SkylapitCustomers from '../../Components/Skylapit/SkylapitCustomers';
+import SkylapitPrint from '../../Components/Skylapit/SkylapitPrint'
+import SkylapitDownloadInvoice from '../../Components/Skylapit/SkylapitDownloadInvoice';
+import SkylapitDashboard from '../../Components/Dashboard/Skylapitdashboard';
+import SkylapitStockManagement from '../../Components/Skylapit/SkylapitStockManagement';
+import SkylapitTrash from '../../Components/Trash/SkylapitTrash';
+import SkylapitSendEmailInvoicesCustom from '../../Components/Skylapit/SkylapitSendEmailInvoicesCustom';
+import SkylapitTask from '../../Components/Tasks/SkylapitTask';
 import { BarChartSkeleton, PieChartSkeleton } from '../../Components/Skeleton/BarChartSkeleton';
-import Divineitpngbillingediting from '../../Components/Divineitpng/Divineitpngbillingediting';
-import DivineitpngCreateTask from '../../Components/Tasks/DivineitpngCreateTask';
-import DivineitpngShowTask from '../../Components/Tasks/DivineitpngShowTask';
-import CreatePo from '../../Components/DivineitpngPo/CreatePo';
-import ManagePos from '../../Components/DivineitpngPo/ManagePos';
-import DivineitpngPoTrash from '../../Components/DivineitpngPo/DivineitpngPoTrash';
-import DivineitpngPoEdit from '../../Components/DivineitpngPo/DivineitpngPoEdit';
-import DivineitpngReceipt from '../../Components/Divineitpng/DivineitpngReceipt';
-import DivineitpngReceiptPrint from '../../Components/Divineitpng/DivineitpngReceiptPrint';
-import DivineitpngReceiptList from '../../Components/Divineitpng/DivineitpngReceiptList';
-import DivineitpngReceiptTrash from '../../Components/Divineitpng/DivineitpngReceiptTrash';
+import Skylapitbillingediting from '../../Components/Skylapit/Skylapitbillingediting';
+import SkylapitCreateTask from '../../Components/Tasks/SkylapitCreateTask';
+import SkylapitShowTask from '../../Components/Tasks/SkylapitShowTask';
+import CreatePo from '../../Components/SkylapitPo/CreatePo';
+import ManagePos from '../../Components/SkylapitPo/ManagePos';
+import SkylapitPoTrash from '../../Components/SkylapitPo/SkylapitPoTrash';
+import SkylapitPoEdit from '../../Components/SkylapitPo/SkylapitPoEdit';
+import SkylapitReceipt from '../../Components/Skylapit/SkylapitReceipt';
+import SkylapitReceiptPrint from '../../Components/Skylapit/SkylapitReceiptPrint';
+import SkylapitReceiptList from '../../Components/Skylapit/SkylapitReceiptList';
+import SkylapitReceiptTrash from '../../Components/Skylapit/SkylapitReceiptTrash';
 
 
 
 
 import Footer from '../../Components/Footer/Footer';
-import DivineitpngTaskTrash from '../../Components/Tasks/DivineitpngTaskTrash';
-import DivineitpngWhatsappInvoice from '../../Components/Divineitpng/DivineitpngWhatsappInvoice';
+import SkylapitTaskTrash from '../../Components/Tasks/SkylapitTaskTrash';
+import SkylapitWhatsappInvoice from '../../Components/Skylapit/SkylapitWhatsappInvoice';
 
 
 
@@ -69,37 +69,37 @@ const Admin = () => {
           {(role === "admin" || role === "staff" ) && <Route path='/PieChartSkeleton' element={<PieChartSkeleton />} />}
           
 
-          {/* Divineitpng BILLINGS */}
-          {(role === "admin" || role === "staff" ) && <Route path='/Divineitpngdashboard' element={<DivineitpngDashboard />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngStockManagement' element={<DivineitpngStockManagement />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngStockManagement/:stockId' element={<DivineitpngStockManagement />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngInvoice' element={<DivineitpngInvoice />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/Divineitpngbilling' element={<DivineitpngBilling />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngCustomers' element={<DivineitpngCustomers />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/Divineitpngprint' element={<DivineitpngPrint/>} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/Divineitpngdownload-invoice' element={<DivineitpngDownloadInvoice />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngSendEmailInvoicesCustom' element={<DivineitpngSendEmailInvoicesCustom/>} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngTrash' element={<DivineitpngTrash/>} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngTask' element={<DivineitpngTask/>} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/Divineitpngbillingediting' element={<Divineitpngbillingediting/>} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngCreateTask' element={<DivineitpngCreateTask/>} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/Divineitpngshowtask/:taskId' element={<DivineitpngShowTask />} />}      
+          {/* Skylapit BILLINGS */}
+          {(role === "admin" || role === "staff" ) && <Route path='/Skylapitdashboard' element={<SkylapitDashboard />} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitStockManagement' element={<SkylapitStockManagement />} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitStockManagement/:stockId' element={<SkylapitStockManagement />} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitInvoice' element={<SkylapitInvoice />} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/Skylapitbilling' element={<SkylapitBilling />} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitCustomers' element={<SkylapitCustomers />} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/Skylapitprint' element={<SkylapitPrint/>} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/Skylapitdownload-invoice' element={<SkylapitDownloadInvoice />} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitSendEmailInvoicesCustom' element={<SkylapitSendEmailInvoicesCustom/>} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitTrash' element={<SkylapitTrash/>} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitTask' element={<SkylapitTask/>} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/Skylapitbillingediting' element={<Skylapitbillingediting/>} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitCreateTask' element={<SkylapitCreateTask/>} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/Skylapitshowtask/:taskId' element={<SkylapitShowTask />} />}      
           {(role === "admin" || role === "staff" ) && <Route path='/createpo' element={<CreatePo />} />}
           {(role === "admin" || role === "staff" ) && <Route path='/Managepos' element={<ManagePos />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngPoTrash' element={<DivineitpngPoTrash />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngPoEdit' element={<DivineitpngPoEdit />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngTaskTrash' element={<DivineitpngTaskTrash />} />}
-          {(role === "admin" || role === "staff" ) && <Route path='/DivineitpngWhatsappInvoice' element={<DivineitpngWhatsappInvoice />} />}
-          {(role === "admin") && <Route path='/DivineitpngReceipt' element={<DivineitpngReceipt />} />}
-          {(role === "admin") && <Route path='/DivineitpngReceiptPrint' element={<DivineitpngReceiptPrint />} />}
-          {(role === "admin") && <Route path="/DivineitpngReceiptList" element={<DivineitpngReceiptList />} />}
-          {(role === "admin") && <Route path="/DivineitpngReceiptTrash" element={<DivineitpngReceiptTrash />} />}
-          {/* End of Divineitpng BILLINGS */}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitPoTrash' element={<SkylapitPoTrash />} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitPoEdit' element={<SkylapitPoEdit />} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitTaskTrash' element={<SkylapitTaskTrash />} />}
+          {(role === "admin" || role === "staff" ) && <Route path='/SkylapitWhatsappInvoice' element={<SkylapitWhatsappInvoice />} />}
+          {(role === "admin") && <Route path='/SkylapitReceipt' element={<SkylapitReceipt />} />}
+          {(role === "admin") && <Route path='/SkylapitReceiptPrint' element={<SkylapitReceiptPrint />} />}
+          {(role === "admin") && <Route path="/SkylapitReceiptList" element={<SkylapitReceiptList />} />}
+          {(role === "admin") && <Route path="/SkylapitReceiptTrash" element={<SkylapitReceiptTrash />} />}
+          {/* End of Skylapit BILLINGS */}
          
 
 
 
-          <Route path="*" element={<Navigate to="/Divineitpngdashboard" />} />
+          <Route path="*" element={<Navigate to="/Skylapitdashboard" />} />
         </Routes>
       </div>
       

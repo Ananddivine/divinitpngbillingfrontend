@@ -26,7 +26,7 @@ const statusBadgeClass = (status) => {
   }
 };
 
-const DivineitpngReceiptList = () => {
+const SkylapitReceiptList = () => {
   const [receipts, setReceipts] = useState([]);
   const [openDropdown, setOpenDropdown] = useState(null); // { id, top, left }
   const navigate = useNavigate();
@@ -165,7 +165,7 @@ const DivineitpngReceiptList = () => {
   }, [openDropdown]);
 
   const handleViewPrint = (receipt) => {
-    navigate("/Divineitpngreceiptprint", { state: receipt });
+    navigate("/Skylapitreceiptprint", { state: receipt });
   };
 
   const handleStatusChange = async (receipt, newStatus) => {
@@ -280,14 +280,14 @@ const DivineitpngReceiptList = () => {
           </button>
 
           <button
-            onClick={() => navigate("/Divineitpngreceipt")}
+            onClick={() => navigate("/Skylapitreceipt")}
             className="flex items-center gap-2 rounded-2xl bg-[linear-gradient(135deg,#7c2d12,#9a3412)] px-4 py-3 text-sm font-semibold text-white shadow-[0_12px_24px_rgba(124,45,18,0.24)] transition duration-200 hover:brightness-105"
           >
             <FaPrint /> New Acknowledgement
           </button>
 
           <button
-            onClick={() => navigate("/DivineitpngReceiptTrash")}
+            onClick={() => navigate("/SkylapitReceiptTrash")}
             className="rounded-2xl border border-[#dfd3c3] bg-white/80 px-4 py-3 text-sm font-semibold text-slate-900 transition duration-200 hover:bg-stone-50"
           >
             🗑️ Trash
@@ -501,4 +501,4 @@ const DivineitpngReceiptList = () => {
   );
 };
 
-export default DivineitpngReceiptList;
+export default SkylapitReceiptList;

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import '../Divineitpng/DivineitpnginvoicePrint.css';
+import '../Skylapit/SkylapitinvoicePrint.css';
 import logo from '../../assets/logo.png';
 import { convertToWords } from '../utils/allowedUsers';
 import axiosInstance from '../axiosInstance/axiosInstance';
 import verifyToken from "../utils/verifyToken";
 
-const DivineitpngPoOrders = () => {
+const SkylapitPoOrders = () => {
     const { id } = useParams(); // Get poNumber from URL
   const [po, setPo] = useState(null);
   const [isAuthorized, setIsAuthorized] = useState(false); // ✅ Move this above useEffect
@@ -37,7 +37,7 @@ const DivineitpngPoOrders = () => {
  useEffect(() => {
     const fetchPo = async () => {
       try {
-        const response = await axiosInstance.get(`/api/DivineitpngPoOrders/${id}`);
+        const response = await axiosInstance.get(`/api/SkylapitPoOrders/${id}`);
         setPo(response.data);
       } catch (error) {
         console.error("Error fetching PO:", error);
@@ -62,7 +62,7 @@ const DivineitpngPoOrders = () => {
   const total = subtotal + tax;
 
   const whatsappShare = () => {
-    const shareURL = `${window.location.origin}/DivineitpngPoOrders/${id}`;
+    const shareURL = `${window.location.origin}/SkylapitPoOrders/${id}`;
     const whatsappURL = `https://api.whatsapp.com/send?text=Check out this Purchase Order: ${shareURL}`;
     window.open(whatsappURL, "_blank");
   };
@@ -75,7 +75,7 @@ const DivineitpngPoOrders = () => {
          {/* Left - Company Details */}
          <div>
            <img src={logo} className="w-32 h-auto mb-2" alt="Company Logo" />
-           <h1 className="font-bold text-lg uppercase">Divineitpng LAPTOP SERVICE</h1>
+           <h1 className="font-bold text-lg uppercase">Skylapit LAPTOP SERVICE</h1>
            <p className="text-xs">The Service Excellence</p>
            <p className="text-xs">+91 9606120007</p>
            <p className="text-xs">GST: 29CCGPM5472G1Z9</p>
@@ -91,8 +91,8 @@ const DivineitpngPoOrders = () => {
        {/* Vendor & Customer Section */}
        <div className="grid grid-cols-2 gap-6 mb-6 border-b border-gray-800 pb-4">
        <div>
-           <h3 className="font-bold bg-blue-950 p-2 text-gray-100">Divineitpng</h3>
-           <p>Name: Divineitpng LAPTOP SERVICE</p>
+           <h3 className="font-bold bg-blue-950 p-2 text-gray-100">Skylapit</h3>
+           <p>Name: Skylapit LAPTOP SERVICE</p>
            <p>Phone: +91 9606120007</p>
            <p>Address: 6/1,First floor, 63, Whitefield Main Rd, opposite to dress circle mall, above united farma, Whitefield, Bengaluru, Karnataka 560066</p>
          </div>
@@ -178,4 +178,4 @@ const DivineitpngPoOrders = () => {
  };
  
 
-export default DivineitpngPoOrders;
+export default SkylapitPoOrders;

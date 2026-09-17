@@ -3,9 +3,9 @@ import Navbar from "./Components/Navbar/Navbar";
 import Admin from "./Pages/admin/Admin";
 import Login from "./Components/Login/Login";
 import "./index.css";
-import DivineitpngPo from "./Components/DivineitpngPo/DivineitpngPo";
+import SkylapitPo from "./Components/SkylapitPo/SkylapitPo";
 import { Routes, Route, useLocation } from "react-router-dom";
-import DivineitpngPoOrders from "./Components/DivineitpngPo/DivineitpngPoOrders";
+import SkylapitPoOrders from "./Components/SkylapitPo/SkylapitPoOrders";
 import Footer from "./Components/Footer/Footer";
 
 export const backendUrl = import.meta.env.VITE_BACKEND_URL;
@@ -33,20 +33,20 @@ const App = () => {
 
   // Hide Navbar for these pages
   const hideNavbarRoutes = [
-    "/Divineitpngprint",
+    "/Skylapitprint",
     "/JerishConstructionprint",
     "/JerishConstructionPoPrint",
     "/JerishConstructionPrintinvoice",
     "/JerishConstructionPoPrintCustom",
-    "/Divineitpng-po/:id",
-    "/DivineitpngPoOrders/:poNumber",
+    "/Skylapit-po/:id",
+    "/SkylapitPoOrders/:poNumber",
   ];
 
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
   // Hide Footer for these pages
   const hideFooterRoutes = [
-    "/Divineitpngprint",
+    "/Skylapitprint",
     "/JerishConstructionprint",
     "/JerishConstructionPoPrint",
     "/JerishConstructionPrintinvoice",
@@ -72,8 +72,8 @@ const App = () => {
     <div>
       <Routes>
         {/* Public Route - Accessible without login */}
-        <Route path="/Divineitpng-po/:id" element={<DivineitpngPo />} />
-        <Route path="/DivineitpngPoOrders/:id" element={<DivineitpngPoOrders />} />
+        <Route path="/Skylapit-po/:id" element={<SkylapitPo />} />
+        <Route path="/SkylapitPoOrders/:id" element={<SkylapitPoOrders />} />
 
         {/* Protected Routes - Require Login */}
         <Route

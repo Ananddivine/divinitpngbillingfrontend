@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axiosInstance from "../axiosInstance/axiosInstance";
-import "./DivineitpnginvoicePrint.css";
+import "./SkylapitinvoicePrint.css";
 import { FaPrint, FaSave } from "react-icons/fa";
 
-const DivineitpngReceipt = () => {
+const SkylapitReceipt = () => {
   const navigate = useNavigate();
 
   const [receiptNumber, setReceiptNumber] = useState("");
@@ -79,8 +79,8 @@ const DivineitpngReceipt = () => {
       try {
         const response = await axiosInstance.get("/api/receipts/job/last");
         if (response.status === 200) {
-          setLastJobNumber(response.data.lastJobNumber || "DIP0000");
-          setJobNumber(response.data.nextJobNumber || "DIP0001");
+          setLastJobNumber(response.data.lastJobNumber || "SKY0000");
+          setJobNumber(response.data.nextJobNumber || "SKY0001");
         }
       } catch (error) {
         console.error("Error fetching last job number:", error);
@@ -191,7 +191,7 @@ const DivineitpngReceipt = () => {
     setLoadingPrint(false);
     if (!saved) return;
 
-    navigate("/Divineitpngreceiptprint", { state: buildReceiptData() });
+    navigate("/Skylapitreceiptprint", { state: buildReceiptData() });
   };
 
   return (
@@ -491,4 +491,4 @@ const DivineitpngReceipt = () => {
   );
 };
 
-export default DivineitpngReceipt;
+export default SkylapitReceipt;

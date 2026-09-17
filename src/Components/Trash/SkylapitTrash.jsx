@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axiosInstance from '../axiosInstance/axiosInstance'
 
-const DivineitpngTrash = () => {
+const SkylapitTrash = () => {
     const [trashedInvoices, setTrashedInvoices] = useState([]);
 
 
@@ -86,4 +86,4 @@ const DivineitpngTrash = () => {
   );
 };
 
-export default DivineitpngTrash;
+export default SkylapitTrash;

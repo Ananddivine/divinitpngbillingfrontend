@@ -170,7 +170,7 @@ const ManagePos = () => {
 
   // Navigate to Download po Page
   const handleWhatsapp = (po) => {
-    navigate(`/Divineitpng-po/${po._id}`);
+    navigate(`/Skylapit-po/${po._id}`);
   };
   
 
@@ -206,7 +206,7 @@ const deletePo = async () => {
   }
 
   const handelEditpo = (po) =>{
-    navigate("/DivineitpngPoEdit", { state: po });
+    navigate("/SkylapitPoEdit", { state: po });
   }
 
 

@@ -1,11 +1,11 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import './DivineitpnginvoicePrint.css';
+import './SkylapitinvoicePrint.css';
 import logo from '../../assets/logo.png';
 import { convertToWords } from '../utils/currencyUtils';
 import { toPng } from 'html-to-image';
 
-const DivineitpngWhatsappInvoice = () => {
+const SkylapitWhatsappInvoice = () => {
     const location = useLocation();
     const {customerName, gstNumber, customerNumber, invoiceNumber, invoiceDate, products, subtotal, tax, total } = location.state || {};  
     const invoiceRef = useRef(null);  
@@ -19,7 +19,7 @@ const DivineitpngWhatsappInvoice = () => {
           const dataUrl = await toPng(invoiceRef.current, { cacheBust: true, pixelRatio: 4, });
           const res = await fetch(dataUrl);
           const blob = await res.blob();
-          const file = new File([blob], `Invoice-${invoiceNumber || 'Divineitpng'}.png`, {
+          const file = new File([blob], `Invoice-${invoiceNumber || 'Skylapit'}.png`, {
             type: blob.type,
           });      
           await navigator.share({
@@ -130,4 +130,4 @@ const DivineitpngWhatsappInvoice = () => {
         </div>
       );      
       };     
-export default DivineitpngWhatsappInvoice;
+export default SkylapitWhatsappInvoice;

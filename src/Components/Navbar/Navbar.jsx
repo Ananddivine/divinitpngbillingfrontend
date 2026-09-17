@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import navlogo from '../../assets/LOGO-PNG-2.png';
+import navlogo from '../../assets/logo.png';
 import navProfileAnand from '../../assets/nav-profile.jpg';
 import{ FaDotCircle} from "react-icons/fa";
 
 
 const profileData = {
-  "anand@divineit.com": { image: navProfileAnand, name: "Anand" },
+  "anand@Skylapit.com": { image: navProfileAnand, name: "Anand" },
   
 };
 

@@ -6,7 +6,7 @@ import { BarChartSkeleton } from "../Skeleton/BarChartSkeleton";
 import { PieChartSkeleton } from "../Skeleton/BarChartSkeleton";
 import {  fetchDashboardData, fetchDueInvoiceCount, fetchTodoCount, fetchPurchaseOverview } from "../utils/salesandsummary";
 
-const DivineitpngDashboard = () => {
+const SkylapitDashboard = () => {
   const [totalSales, setTotalSales] = useState(0);
   const [stockItems, setStockItems] = useState([]);
   const [expanded, setExpanded] = useState(false);
@@ -92,10 +92,10 @@ useEffect(() => {
   }, []); 
 
   const handleClick = () => {
-    navigate("/DivineitpngCustomers"); // Redirect to Customer page
+    navigate("/SkylapitCustomers"); // Redirect to Customer page
   };
   const handeltask = () => {
-    navigate("/DivineitpngTask", { state: { status: "TODO" } }); // Pass "TODO" as state
+    navigate("/SkylapitTask", { state: { status: "TODO" } }); // Pass "TODO" as state
   }; 
 
   useEffect(() => {
@@ -117,7 +117,7 @@ useEffect(() => {
       <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
           <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">Operations Overview</span>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900">Divineitpng Dashboard</h2>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900">Skylapit Dashboard</h2>
           <p className="mt-2 text-sm text-stone-600">Track revenue, customers, pending work, stock, and purchasing from one view.</p>
         </div>
       </div>
@@ -235,7 +235,7 @@ useEffect(() => {
               <td className="border-b border-[#e8dfd4] p-3">{item.price}</td>
               <td
                 className="border-b border-[#e8dfd4] p-3 cursor-pointer"
-                onClick={() => navigate(`/DivineitpngStockManagement/${item._id}`)}
+                onClick={() => navigate(`/SkylapitStockManagement/${item._id}`)}
               >
                 <FaEdit className="text-teal-700 ml-3" />
               </td>
@@ -334,4 +334,4 @@ useEffect(() => {
   );
 };
 
-export default DivineitpngDashboard;
+export default SkylapitDashboard;

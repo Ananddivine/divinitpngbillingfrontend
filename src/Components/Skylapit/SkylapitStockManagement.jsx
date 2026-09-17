@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axiosInstance from "../axiosInstance/axiosInstance";
 import { useParams } from "react-router-dom";
 
-const DivineitpngStockManagement = () => {
+const SkylapitStockManagement = () => {
   const [stocks, setStocks] = useState([]);
   const [products, setProducts] = useState([]);
   const { stockId } = useParams();
@@ -227,4 +227,4 @@ const DivineitpngStockManagement = () => {
   );
 };
 
-export default DivineitpngStockManagement;
+export default SkylapitStockManagement;

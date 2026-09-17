@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useReactToPrint } from "react-to-print";
-import "./DivineitpnginvoicePrint.css";
-import logo from "../../assets/logobg.png";
+import "./SkylapitinvoicePrint.css";
+import logo from "../../assets/logo.png";
 
 const accessoryLabels = {
   charger: "Charger",
@@ -13,7 +13,7 @@ const accessoryLabels = {
   battery: "Battery",
 };
 
-const DivineitpngReceiptPrint = () => {
+const SkylapitReceiptPrint = () => {
   const location = useLocation();
   const {
     receiptNumber,
@@ -39,7 +39,7 @@ const DivineitpngReceiptPrint = () => {
 
   const handlePrint = useReactToPrint({
     contentRef: printRef,
-    documentTitle: receiptNumber || "Divineitpng-Acknowledgement",
+    documentTitle: receiptNumber || "Skylapit-Acknowledgement",
   });
 
   const handleImageLoad = () => setLogoLoaded(true);
@@ -183,4 +183,4 @@ const DivineitpngReceiptPrint = () => {
   );
 };
 
-export default DivineitpngReceiptPrint;
+export default SkylapitReceiptPrint;

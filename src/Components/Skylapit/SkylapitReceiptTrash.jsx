@@ -5,7 +5,7 @@ import { FaTrashRestore, FaSync } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const DivineitpngReceiptTrash = () => {
+const SkylapitReceiptTrash = () => {
   const [trashedReceipts, setTrashedReceipts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -89,7 +89,7 @@ const DivineitpngReceiptTrash = () => {
 
         <div className="flex flex-wrap items-center gap-3">
           <button
-            onClick={() => navigate("/DivineitpngReceiptList")}
+            onClick={() => navigate("/SkylapitReceiptList")}
             className="rounded-2xl border border-[#dfd3c3] bg-white/80 px-4 py-3 text-sm font-semibold text-slate-900 transition duration-200 hover:bg-stone-50"
           >
             ← Back to Receipts
@@ -187,4 +187,4 @@ const DivineitpngReceiptTrash = () => {
   );
 };
 
-export default DivineitpngReceiptTrash;
+export default SkylapitReceiptTrash;

@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axiosInstance from '../axiosInstance/axiosInstance';
 import { FaSave } from "react-icons/fa";
 
-const DivineitpngPoEdit = () => {
+const SkylapitPoEdit = () => {
     const location = useLocation();
     const navigate = useNavigate();
       const [loadingSave, setLoadingSave] = useState(false);
@@ -204,4 +204,4 @@ const DivineitpngPoEdit = () => {
     );
 };
 
-export default DivineitpngPoEdit;
+export default SkylapitPoEdit;

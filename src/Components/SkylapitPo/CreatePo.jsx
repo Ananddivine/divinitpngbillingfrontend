@@ -119,7 +119,7 @@ useEffect(() => {
         sessionStorage.setItem("hasRefreshed", "false");
   
         // Redirect only after successful PO creation
-        navigate(`/DivineitpngPoOrders/${poNumber}`);
+        navigate(`/SkylapitPoOrders/${poNumber}`);
       } else {
         console.error("⚠️ Failed to save PO:", response.data.message);
         toast.error(response.data.message || "Failed to save the PO!");

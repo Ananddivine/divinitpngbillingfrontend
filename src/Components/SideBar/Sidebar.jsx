@@ -44,18 +44,18 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         name: "Divine IT PNG  Billings",
         icon: <FaMailBulk />,
        children: [
-          { name: "Invoices", path: "/DivineitpngInvoice", icon: <FaInbox /> },
-          { name: "Billing", path: "/DivineitpngBilling", icon: <FaPrint /> },
-          { name: "Acknowledgement Receipt", path: "/Divineitpngreceipt", icon: <FaClipboard /> },
-          { name: "Receipt List", path: "/DivineitpngReceiptList", icon: <FaClipboard /> },
-          { name: "Customers", path: "/DivineitpngCustomers", icon: <FaUserFriends /> },
-          { name: "Divine IT PNG Trash", path: "/DivineitpngTrash", icon: <FaTrash /> },
-          { name: "Divine IT PNG StockManagement", path: "/DivineitpngStockManagement", icon: <FaWarehouse /> },
-          { name: "Divine IT PNG  Task", path: "/DivineitpngTask", icon: <FaTasks /> },
-          { name: "Divine IT PNG  Create Task", path: "/DivineitpngCreateTask", icon: <FaTasks /> },
+          { name: "Invoices", path: "/SkylapitInvoice", icon: <FaInbox /> },
+          { name: "Billing", path: "/SkylapitBilling", icon: <FaPrint /> },
+          { name: "Acknowledgement Receipt", path: "/Skylapitreceipt", icon: <FaClipboard /> },
+          { name: "Receipt List", path: "/SkylapitReceiptList", icon: <FaClipboard /> },
+          { name: "Customers", path: "/SkylapitCustomers", icon: <FaUserFriends /> },
+          { name: "Divine IT PNG Trash", path: "/SkylapitTrash", icon: <FaTrash /> },
+          { name: "Divine IT PNG StockManagement", path: "/SkylapitStockManagement", icon: <FaWarehouse /> },
+          { name: "Divine IT PNG  Task", path: "/SkylapitTask", icon: <FaTasks /> },
+          { name: "Divine IT PNG  Create Task", path: "/SkylapitCreateTask", icon: <FaTasks /> },
           { name: "Create Po", path: "/CreatePo", icon: <FaCaretRight /> },
-          { name: "Po Trash", path: "/DivineitpngPoTrash", icon: <FaTrash /> },
-          { name: "Acknowledgement Receipt Trash", path: "/DivineitpngReceiptTrash", icon: <FaTrash /> },
+          { name: "Po Trash", path: "/SkylapitPoTrash", icon: <FaTrash /> },
+          { name: "Acknowledgement Receipt Trash", path: "/SkylapitReceiptTrash", icon: <FaTrash /> },
         ],
       },     
            
@@ -85,10 +85,10 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     //Aryamama
     
     staff: [
-      { name: "Dashboard", path: "/DivineitpngDashboard", icon: <FaTachometerAlt /> },
-      { name: "Stocks", path: "/DivineitpngStockManagement", icon: <FaWarehouse  /> },
+      { name: "Dashboard", path: "/SkylapitDashboard", icon: <FaTachometerAlt /> },
+      { name: "Stocks", path: "/SkylapitStockManagement", icon: <FaWarehouse  /> },
       { name: "Products", path: "/Products", icon: <FaDatabase /> },
-      { name: "Customers", path: "/DivineitpngCustomers", icon: <FaUserFriends /> },
+      { name: "Customers", path: "/SkylapitCustomers", icon: <FaUserFriends /> },
  
        
 
@@ -96,9 +96,9 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         name: "Tasks",
         icon: <FaTasks/>,
         children: [
-          { name: "CreateTasks", path: "/DivineitpngCreateTask", icon: <FaPen />},
-          { name: "Task", path: "/DivineitpngTask", icon: <FaTasks />},  
-          { name: "Trash", path: "/DivineitpngTaskTrash", icon: <FaTrash />},  
+          { name: "CreateTasks", path: "/SkylapitCreateTask", icon: <FaPen />},
+          { name: "Task", path: "/SkylapitTask", icon: <FaTasks />},  
+          { name: "Trash", path: "/SkylapitTaskTrash", icon: <FaTrash />},  
 
         ]
       },
@@ -107,9 +107,9 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         name: "Billings",
         icon: <FaMailBulk />,
         children: [
-          { name: "Billing", path: "/DivineitpngBilling", icon: <FaPrint /> },
-          { name: "Invoices", path: "/DivineitpngInvoice", icon: <FaFileInvoice /> },            
-          { name: "Trash", path: "/DivineitpngTrash", icon: <FaTrash  /> },
+          { name: "Billing", path: "/SkylapitBilling", icon: <FaPrint /> },
+          { name: "Invoices", path: "/SkylapitInvoice", icon: <FaFileInvoice /> },            
+          { name: "Trash", path: "/SkylapitTrash", icon: <FaTrash  /> },
         ],
       },
 
@@ -117,9 +117,9 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         name: "PO Manage",
         icon: <FaCaretRight/>,
         children: [
-            { name: "Create Po", path: "/DivineitpngCreatePo", icon: <FaPrint/>},
-            { name: "Po lists", path: "/DivineitpngManagePos", icon: <FaThList/>},
-            { name: "Po Trash", path: "/DivineitpngPoTrash", icon: <FaTrash/>},
+            { name: "Create Po", path: "/SkylapitCreatePo", icon: <FaPrint/>},
+            { name: "Po lists", path: "/SkylapitManagePos", icon: <FaThList/>},
+            { name: "Po Trash", path: "/SkylapitPoTrash", icon: <FaTrash/>},
         ],
       },
      
@@ -180,7 +180,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           {showLabels && (
             <div>
               <p className="text-xs uppercase tracking-[0.24em] text-amber-200/80">Admin Panel</p>
-              <h1 className="text-lg font-semibold text-white">Divine IT PNG</h1>
+              <h1 className="text-lg font-semibold text-white">Skylap IT Solutions</h1>
             </div>
           )}
         </div>

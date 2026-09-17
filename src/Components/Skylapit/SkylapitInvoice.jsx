@@ -11,7 +11,7 @@ import {exportToExcel} from "../utils/ExportExcell"
 
 
 
-const DivineitpngInvoice = () => {
+const SkylapitInvoice = () => {
   const [invoices, setInvoices] = useState([]);
   const [sendingMonthlyReport, setSendingMonthlyReport] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null); // { id, top, left }
@@ -168,10 +168,10 @@ const DivineitpngInvoice = () => {
 
   
 
-  const handlePrint = (invoice) => {sessionStorage.setItem('hasRefreshed', 'false');  navigate("/Divineitpngprint", { state: invoice });};
-  const handleDownloadPDF = (invoice) => {navigate("/Divineitpngdownload-invoice", { state: invoice });};
-  const handleSendEmail = (invoice) => {navigate("/DivineitpngSendEmailInvoicesCustom", { state: invoice });};
-  const handleWhatsApp = (invoice) => {navigate("/DivineitpngWhatsappInvoice", { state: invoice });};
+  const handlePrint = (invoice) => {sessionStorage.setItem('hasRefreshed', 'false');  navigate("/Skylapitprint", { state: invoice });};
+  const handleDownloadPDF = (invoice) => {navigate("/Skylapitdownload-invoice", { state: invoice });};
+  const handleSendEmail = (invoice) => {navigate("/SkylapitSendEmailInvoicesCustom", { state: invoice });};
+  const handleWhatsApp = (invoice) => {navigate("/SkylapitWhatsappInvoice", { state: invoice });};
 
   const handleSendMonthlyReport = async () => {
     setSendingMonthlyReport(true);
@@ -221,7 +221,7 @@ const deleteInvoice = async () => {
   }
 
   const handelEditinvoice = (invoice) =>{
-    navigate("/Divineitpngbillingediting", { state: invoice });
+    navigate("/Skylapitbillingediting", { state: invoice });
   }
 
   const toggleActionMenu = (invoiceId) => {
@@ -272,7 +272,7 @@ const deleteInvoice = async () => {
           <div>
             <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">Invoice Desk</span>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900">Invoices</h1>
-            <p className="mt-2 text-sm text-stone-600">Search, filter, export, and manage all Divineitpng billing records.</p>
+            <p className="mt-2 text-sm text-stone-600">Search, filter, export, and manage all Skylapit billing records.</p>
           </div>
           <div className="rounded-2xl border border-[#dfd3c3] bg-white/70 px-4 py-3 text-sm text-stone-600">
             Showing {currentItems.length} of {filteredinvoices.length} invoices
@@ -534,5 +534,5 @@ const deleteInvoice = async () => {
   
   };
   
-  export default DivineitpngInvoice;
+  export default SkylapitInvoice;
   

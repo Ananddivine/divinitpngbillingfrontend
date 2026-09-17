@@ -2,12 +2,12 @@ import React, { useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import './DivineitpnginvoiceDownload.css';
+import './SkylapitinvoiceDownload.css';
 import logo from '../../assets/logo.png'
 import { convertToWords } from '../utils/currencyUtils';
 
 
-const DivineitpngDownloadInvoice = () => {
+const SkylapitDownloadInvoice = () => {
   const location = useLocation();
   const { customerName, customerNumber, gstNumber, invoiceNumber, invoiceDate, products, subtotal, tax, total } = location.state || {};
   const invoiceRef = useRef();
@@ -68,7 +68,7 @@ const handleDownload = () => {
              <div className="flex justify-between items-start mb-4 ">            
                <div className="w-1/2 font-poppins">
                  <img src={logo} className="w-[20vh] h-auto mb-2" alt="Company Logo"/>
-                <h1 className="font-bold text-lg uppercase">Divine it png</h1>
+                <h1 className="font-bold text-lg uppercase">Skylap IT Solutions</h1>
                 <p className="text-xs">The Service Excellence</p>
                 <p className="text-xs">+675 78162860</p>
                 <p className="text-xs"> #35 3d floor Tisa Ruma Building beside Holiday Inn Holiday, NCD, Port Moresby Papua New Guinea 121</p>
@@ -149,4 +149,4 @@ const handleDownload = () => {
            </div>
          );
        };     
-export default DivineitpngDownloadInvoice;
+export default SkylapitDownloadInvoice;
