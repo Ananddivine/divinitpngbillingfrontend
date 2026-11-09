@@ -111,7 +111,7 @@ const handleSendEmail = async () => {
                <div className="flex justify-between items-start mb-4 ">            
                  <div className="w-1/2 font-poppins">
                    <img src={logo} className="w-[20vh] h-auto mb-2" alt="Company Logo"/>
-                 <h1 className="font-bold text-lg uppercase">Divine it png</h1>
+                 <h1 className="font-bold text-lg uppercase">Skylap IT Solutions</h1>
                 <p className="text-xs">The Service Excellence</p>
                 <p className="text-xs">+675 78162860</p>
                 <p className="text-xs"> #35 3d floor Tisa Ruma Building beside Holiday Inn Holiday, NCD, Port Moresby Papua New Guinea 121</p>
@@ -152,7 +152,7 @@ const handleSendEmail = async () => {
                  </div>         
                  <div className="w-60 border border-gray-800 border-t-transparent">
                    <p className="font-poppins border-b border-gray-800 px-3 py-2"><strong>Subtotal :</strong> K{subtotal?.toFixed(2) || 0}</p>
-                   <p className="font-poppins border-b border-gray-800 px-3 py-2"><strong>Tax : </strong> K{tax?.toFixed(2) || 0} (18%)</p>
+                   <p className="font-poppins border-b border-gray-800 px-3 py-2"><strong>Tax : </strong> K{tax?.toFixed(2) || 0} (10%)</p>
                    <p className="font-poppins  px-3 py-2"><strong>Total : </strong> K{total?.toFixed(2) || 0}</p>
                  </div>
                </div>

@@ -16,7 +16,7 @@ const CreatePo = () => {
   const [venderNumber, setvenderNumber] = useState('');
   const [venderName, setvenderName] = useState('');
   const [gstNumber, setGstNumber] = useState("");
-  const [taxPercent, setTaxPercent] = useState(18);
+  const [taxPercent, setTaxPercent] = useState(10);
   const [subtotal, setSubtotal] = useState(0);
   const [tax, setTax] = useState(0);
   const [total, setTotal] = useState(0);

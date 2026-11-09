@@ -58,7 +58,7 @@ const SkylapitPoOrders = () => {
 
   // Calculate subtotal, tax, and total
   const subtotal = po.products.reduce((sum, product) => sum + product.price * product.quantity, 0) || 0;
-  const tax = subtotal * 0.18; // Assuming 18% tax
+  const tax = subtotal * 0.10; // Assuming 10% tax
   const total = subtotal + tax;
 
   const whatsappShare = () => {

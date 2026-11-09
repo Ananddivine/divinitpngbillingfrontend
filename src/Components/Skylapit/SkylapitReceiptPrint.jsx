@@ -81,7 +81,7 @@ const SkylapitReceiptPrint = () => {
         <div className="mb-4 flex items-start justify-between">
           <div className="w-1/2 font-poppins">
             <img src={logo} className="mb-2 h-auto w-[20vh]" alt="Company Logo" onLoad={handleImageLoad} />
-            <h1 className="text-lg font-bold uppercase">Divine it png</h1>
+            <h1 className="text-lg font-bold uppercase">Skylap IT Solutions</h1>
             <p className="text-xs">The Service Excellence</p>
             <p className="text-xs">+675 78162860</p>
             <p className="text-xs">
@@ -153,7 +153,7 @@ const SkylapitReceiptPrint = () => {
               <strong>Terms & Conditions:</strong>
               <br />1. This receipt must be presented when collecting the device.
               <br />2. Devices not collected within 30 days of the completion date may incur storage charges.
-              <br />3. Divine it png is not responsible for data loss; please ensure your data is backed up.
+              <br />3. Skylap IT Solutions is not responsible for data loss; please ensure your data is backed up.
               <br />4. The above device condition and accessories were verified with the customer at drop-off.
               <br />5. Estimated cost is indicative only and may change after full diagnosis.
             </p>

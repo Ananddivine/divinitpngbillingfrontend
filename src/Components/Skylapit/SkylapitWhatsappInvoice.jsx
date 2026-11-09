@@ -52,7 +52,7 @@ const SkylapitWhatsappInvoice = () => {
             <div className="flex justify-between items-start mb-4">
               <div className="w-1/2 font-semibold">
                 <img src={logo} className="w-[100px] h-auto mb-2" alt="Company Logo" />
-                <h1 className="font-bold text-lg uppercase">Divine it png</h1>
+                <h1 className="font-bold text-lg uppercase">Skylap IT Solutions</h1>
                 <p className="text-xs">The Service Excellence</p>
                 <p className="text-xs">+675 78162860</p>
                 <p className="text-xs"> #35 3d floor Tisa Ruma Building beside Holiday Inn Holiday, NCD, Port Moresby Papua New Guinea 121</p>
@@ -93,7 +93,7 @@ const SkylapitWhatsappInvoice = () => {
                 </div>
                 <div className="w-56 border border-gray-800 border-t-transparent text-xs">
                   <p className="font-semibold border-b border-gray-800 px-2 py-1"><strong>Subtotal:</strong> K{subtotal?.toFixed(2) || 0}</p>
-                  <p className="font-semibold border-b border-gray-800 px-2 py-1"><strong>Tax:</strong> K{tax?.toFixed(2) || 0} (18%)</p>
+                  <p className="font-semibold border-b border-gray-800 px-2 py-1"><strong>Tax:</strong> K{tax?.toFixed(2) || 0} (10%)</p>
                   <p className="font-semibold px-2 py-1"><strong>Total:</strong> K{total?.toFixed(2) || 0}</p>
                 </div>
               </div>

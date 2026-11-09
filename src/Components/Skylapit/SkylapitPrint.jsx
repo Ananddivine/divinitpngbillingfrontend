@@ -108,7 +108,7 @@ const SkylapitPrint = () => {
               </div>         
               <div className="w-60 border border-gray-800 border-t-transparent">
                 <p className="font-poppins border-b border-gray-800 px-3 py-2"><strong>Subtotal :</strong> K {subtotal?.toFixed(2) || 0}</p>
-                <p className="font-poppins border-b border-gray-800 px-3 py-2"><strong>Tax : </strong> K {tax?.toFixed(2) || 0} (18%)</p>
+                <p className="font-poppins border-b border-gray-800 px-3 py-2"><strong>Tax : </strong> K {tax?.toFixed(2) || 0} (10%)</p>
                 <p className="font-poppins  px-3 py-2"><strong>Total : </strong> K {total?.toFixed(2) || 0}</p>
               </div>
             </div>

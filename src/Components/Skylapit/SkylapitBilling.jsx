@@ -18,7 +18,7 @@ const SkylapitBilling = () => {
   const [customerNumber, setCustomerNumber] = useState('');
   const [customerName, setCustomerName] = useState('');
   const [gstNumber, setGstNumber] = useState("");
-  const [taxPercent, setTaxPercent] = useState(18);
+  const [taxPercent, setTaxPercent] = useState(10);
   const [subtotal, setSubtotal] = useState(0);
   const [tax, setTax] = useState(0);
   const [total, setTotal] = useState(0);
